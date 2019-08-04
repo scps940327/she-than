@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <title>西蓮淨苑</title>
+  <script defer>
+  $(function(){
+    let parameter = {}
+    location.search.split('?')[1].split('&').map((val) => {
+      let res = val.split('=');
+      parameter[res[0]] = res[1];
+    })
+
+    let scrollItemIndex = parameter['item'] - 1;
+    if(scrollItemIndex && scrollItemIndex < $('.section-title').length){
+      let itemPositionY = $('.section-title').eq(scrollItemIndex).offset().top;
+      $("html, body").animate({ scrollTop: itemPositionY }, 600);
+      return;
+    }
+  })
+  </script>
+<link href="./css/style.css" rel="stylesheet"></head>
+<body>
+    <div id="header"></div>
+    <div class="py-4">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item"><a>佛一佛七</a></li>
+            <li class="breadcrumb-item"><a href="classFirst.html">佛七</a></li>
+            <li class="breadcrumb-item active"><a href="classSecond.html">佛七簡介</a></li>
+          </ol>
+        </nav>
+        <div class="text-center font-weight-bold py-4 page-title">佛七簡介</div>
+        <div class="row py-2 py-md-4">
+          <div class="col-12 col-md-3">
+            <ul class="page-menu-md">
+              <li>
+                <div class="row align-items-center mx-0">
+                  <a href="" class="col-auto">佛一</a>
+                  <div class="col-auto text-secondary menu-toggle-btn"><i class="fas fa-caret-right"></i></div>
+                </div>
+              </li>
+              <li>
+                <div class="row align-items-center mx-0">
+                  <a href="" class="col-auto">佛七</a>
+                  <div class="col-auto text-secondary menu-toggle-btn"><i class="fas fa-caret-right"></i></div>
+                </div>
+                <ul class="pl-sm-4">
+                  <li>
+                    <a href="classSecond.html" class="col-auto">活動報名</a>
+                  </li>
+                  <li>
+                    <div class="row align-items-center mx-0">
+                      <a href="classSecond.html" class="col-auto">佛七簡介</a>
+                      <div class="col-auto text-secondary menu-toggle-btn"><i class="fas fa-caret-right"></i></div>
+                    </div>
+                    <ul class="col-12 pl-sm-4">
+                      <li>
+                        <a href="classThird.html?item=1">緣起</a>
+                      </li>
+                      <li>
+                        <a href="classThird.html?item=2">智諭老和尚的願心</a>
+                      </li>
+                      <li>
+                        <a href="classThird.html?item=3">儀規</a>
+                      </li>
+                      <li>
+                        <a href="classThird.html?item=4">一支香的流程</a>
+                      </li>
+                      <li>
+                        <a href="classThird.html?item=5">經行念佛</a>
+                      </li>
+                      <li>
+                        <a href="classThird.html?item=6">過堂</a>
+                      </li>
+                      <li>
+                        <a href="classThird.html?item=7">佛七開示精選</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="classSecond.html" class="col-auto">佛七課程表</a>
+                  </li>
+                  <li>
+                    <a href="classSecond.html" class="col-auto">靜坐念佛十字訣</a>
+                  </li>
+                  <li>
+                    <a href="classSecond.html" class="col-auto">佛七影像留存</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="row align-items-center mx-0">
+                  <a href="" class="col-auto">所有資料</a>
+                  <div class="col-auto text-secondary menu-toggle-btn"><i class="fas fa-caret-right"></i></div>
+                </div>
+              </li>
+            </ul>
+            <ul class="row mx-0 page-menu-sm">
+              <li class="col-auto py-2 rounded">
+                <a href="classThird.html?item=1">緣起</a>
+              </li>
+              <li class="col-auto py-2 rounded">
+                <a href="classThird.html?item=2">智諭老和尚的願心</a>
+              </li>
+              <li class="col-auto py-2 rounded">
+                <a href="classThird.html?item=3">儀規</a>
+              </li>
+              <li class="col-auto py-2 rounded">
+                <a href="classThird.html?item=4">一支香的流程</a>
+              </li>
+              <li class="col-auto py-2 rounded">
+                <a href="classThird.html?item=5">經行念佛</a>
+              </li>
+              <li class="col-auto py-2 rounded">
+                <a href="classThird.html?item=6">過堂</a>
+              </li>
+              <li class="col-auto py-2 rounded">
+                <a href="classThird.html?item=7">佛七開示精選</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-9">
+            <div class="py-4">
+              <div class="row no-gutters pt-4 pb-3">
+                <div class="text-warning pr-2">
+                  <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="text-info">緣起</div>
+              </div>
+              <div class="iframe-rwd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3Np3_7P5Ko8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="pt-4">
+                <p>本苑為淨土道場，故久有打佛七之心。<br>只是茅屋一椽，未堪容足，是以唯有仰聖容而興歎！</p>
+                <p>直至民國六十三年，總算有了C一間像樣的房子。<br>於是不揣簡陋，興沖沖地打了第一次佛七，以後每年都打幾次佛七。</p>
+                <p>剛開始時，無論冬夏都有舉辦。<br>以後因為本苑每年結夏，同時天氣炎熱多有不便。<br>於是夏天改辦修學會，佛七便改為冬天舉行。」<br>（摘錄自《佛七講話第一集》）</p>
+                <p>每年冬天，打幾次佛七。為把一年的修行，勇猛精進一番磨練自己，借勇猛精進的經驗，再作第二年的努力。<br>起初是辦一次佛七（63年～69年1期），不夠，應大家要求，增加為二次（70年～73年辦二期）三次，現在每年辦四次（74年開始，增為四期）。(摘錄自《佛七講話（三）</p>
+              </div>
+            </div>
+            <div class="py-4">
+              <div class="row no-gutters pt-4 pb-3 section-title">
+                <div class="text-warning pr-2">
+                  <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="text-info">智諭老和尚的願心：</div>
+              </div>
+              <div class="iframe-rwd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3Np3_7P5Ko8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="pt-4">
+                <p>本苑為淨土道場，故久有打佛七之心。<br>只是茅屋一椽，未堪容足，是以唯有仰聖容而興歎！</p>
+              </div>
+            </div>
+            <div class="py-4">
+              <div class="row no-gutters pt-4 pb-3 section-title">
+                <div class="text-warning pr-2">
+                  <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="text-info">儀規：</div>
+              </div>
+              <img src="c687dd36f4ff8b90e8382defa6718a76.jpg" width="100%" />
+              <div class="pt-4">
+                <p>1、盤腿就座打地基，手印結合於丹田，<br>2、挺直腰背勿曲仰，頭頸擺正不偏斜，<br>3、端身正坐不散漫，輕安自在不緊張。</p>
+              </div>
+            </div>
+            <div class="py-4">
+              <div class="row no-gutters pt-4 pb-3 section-title">
+                <div class="text-warning pr-2">
+                  <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="text-info">一支香流程</div>
+              </div>
+              <div class="iframe-rwd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3Np3_7P5Ko8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="py-4">
+              <div class="row no-gutters pt-4 pb-3 section-title">
+                <div class="text-warning pr-2">
+                  <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="text-info">經行念佛</div>
+              </div>
+              <div class="iframe-rwd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3Np3_7P5Ko8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="py-4">
+              <div class="row no-gutters pt-4 pb-3 section-title">
+                <div class="text-warning pr-2">
+                  <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="text-info">經行要領</div>
+              </div>
+              <div class="iframe-rwd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3Np3_7P5Ko8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="py-4">
+              <div class="row no-gutters pt-4 pb-3 section-title">
+                <div class="text-warning pr-2">
+                  <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="text-info">過堂</div>
+              </div>
+              <div class="iframe-rwd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3Np3_7P5Ko8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="py-4">
+              <div class="row no-gutters pt-4 pb-3 section-title">
+                <div class="text-warning pr-2">
+                  <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="text-info">佛七開示精選</div>
+              </div>
+              <div class="iframe-rwd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3Np3_7P5Ko8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../docs/js/page.js"></script>
+<script type="text/javascript" src="js/index.js"></script></body>
+</html>

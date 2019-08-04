@@ -1,0 +1,54 @@
+{
+  "menu": [
+    {
+      "title": "淨苑與師長",
+      "link": ""
+    },
+    {
+      "title": "皈依五戒",
+      "link": ""
+    },
+    {
+      "title": "佛一佛七",
+      "link": "",
+      "sub": [
+        {
+          "title": "佛一",
+          "link": "classFirst.html"
+        },
+        {
+          "title": "佛七",
+          "link": "classFirst.html"
+        },
+        {
+          "title": "所有資料",
+          "link": "classFirst.html"
+        }
+      ]
+    },
+    {
+      "title": "法會",
+      "link": ""
+    },
+    {
+      "title": "修學活動",
+      "link": ""
+    },
+    {
+      "title": "分院與社區弘法",
+      "link": ""
+    },
+    {
+      "title": "青少年活動",
+      "link": ""
+    },
+    {
+      "title": "出版社與基金會",
+      "link": ""
+    },
+    {
+      "title": "藏經閣",
+      "link": ""
+    }
+  ]
+}
