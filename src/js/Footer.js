@@ -5,7 +5,7 @@ function Footer(){
    const [headerMenu, setHeaderMenu] = useState([]);
 
    useEffect(() => {
-      var requestURL = '/docs/data.json';
+      var requestURL = './data.json';
       var request = new XMLHttpRequest();
       request.open('GET', requestURL);
       request.responseType = 'json';
