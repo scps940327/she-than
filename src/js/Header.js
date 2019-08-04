@@ -39,17 +39,17 @@ function Header(){
    ]
 
    useEffect(() => {
-      // var requestURL = './data.json';
-      // var request = new XMLHttpRequest();
-      // request.open('GET', requestURL);
-      // request.responseType = 'json';
-      // request.send();
-      // request.onload = () => {
-      //   var superHeroes = request.response;
-      //   setHeaderMenu(superHeroes.menu)
-      // }
+      var requestURL = './data.json';
+      var request = new XMLHttpRequest();
+      request.open('GET', requestURL);
+      request.responseType = 'json';
+      request.send();
+      request.onload = () => {
+        var superHeroes = request.response;
+        setHeaderMenu(superHeroes.menu)
+      }
 
-      setHeaderMenu(testData);
+      //setHeaderMenu(testData);
       window.addEventListener("resize", handleResize);
    }, []);
 
