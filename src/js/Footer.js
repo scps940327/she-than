@@ -20,7 +20,10 @@ function Footer(){
          <div className="col-12 col-sm-auto pr-sm-2">（23743）新北市三峽區溪東路211巷31弄11號</div>
          <div className="col-12 col-sm-auto pr-sm-2">電話:02-8676-1982</div>
          <div className="col-12 col-sm-auto pr-sm-2">Email:seeland333@gmail.com)</div>
-         <div className="col-12 col-sm-auto">回首頁 網站地圖</div>
+         <div className="col-12 col-sm-auto">
+            <a href="index.html" className="pr-2">回首頁</a>
+            <a href="">網站地圖</a>
+         </div>
       </div>
    )
 }
