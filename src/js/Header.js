@@ -49,17 +49,17 @@ function Header(){
         setHeaderMenu(superHeroes.menu)
       }
 
-      //setHeaderMenu(testData);
+      setHeaderMenu(testData);
       window.addEventListener("resize", handleResize);
    }, []);
 
    function handleResize() {
       if(window.innerWidth < 768){
          setIsMobile(true);
+         setMenuIsOpen(false);
       }
       else{
          setIsMobile(false);
-         setMenuIsOpen(false);
       }
    }
 
