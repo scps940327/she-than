@@ -3342,6 +3342,18 @@ body {
     color: #333;
     flex: 0 0 100% !important; }
 
+.header-menu .fixed-top-icon {
+  font-size: 22px; }
+  @media all and (min-width: 768px) {
+    .header-menu .fixed-top-icon {
+      position: fixed;
+      top: 5px;
+      left: 30px; } }
+  @media all and (max-width: 767px) {
+    .header-menu .fixed-top-icon {
+      width: 100%;
+      text-align: center; } }
+
 .header-menu-icon {
   position: fixed;
   top: 28px;
@@ -3442,12 +3454,6 @@ body {
     color: white; }
     .page-menu-sm li:not(:nth-last-child(1)) {
       margin-right: 7px; }
-
-@media all and (min-width: 768px) {
-  .fixed-top-icon {
-    position: fixed;
-    top: 10px;
-    left: 5%; } }
 
 .iframe-rwd {
   position: relative;

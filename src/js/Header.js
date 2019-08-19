@@ -106,11 +106,10 @@ function MenuItem({menuItem, isMobile}){
       setSubMenuOpen(menuNextState)
    }
    if (menuItem.isTop) {
-      console.log(menuItem.link)
       return(
          <li className="fixed-top-icon">
             {menuItem.link.map((link_item, index) =>
-            <a href={link_item.link} target={link_item.target} className="pr-md-1 text-secondary"><i className={link_item.type}></i></a>)}
+            <a href={link_item.link} target={link_item.target} className="p-1 text-secondary"><i className={link_item.type}></i></a>)}
          </li>
       )
    } else {

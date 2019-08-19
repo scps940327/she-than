@@ -116,6 +116,19 @@ body{
       }
     }
   }
+
+  .fixed-top-icon{
+    font-size: 22px;
+    @include md-width{
+      position: fixed;
+      top: 5px;
+      left: 30px;
+    }
+    @include sm-width{
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
 
 .header-menu-icon{
@@ -255,14 +268,6 @@ body{
     &:not(:nth-last-child(1)){
       margin-right: 7px;
     }
-  }
-}
-
-.fixed-top-icon{
-  @include md-width{
-    position: fixed;
-    top: 10px;
-    left: 5%;
   }
 }
 
