@@ -69,7 +69,7 @@ function Header(){
    }
    return (
       <div className="header-rwd">
-         <div className="py-2 text-center bg-white header-logo">
+         <div className="py-2 py-md-4 text-center bg-white header-logo">
             <img src="./img/header_bg_01.png" className="header-bg-01" />
             <img src="./img/header_bg_02.png" className="header-bg-02" />
             <a href="index.html">
@@ -106,13 +106,11 @@ function MenuItem({menuItem, isMobile}){
       setSubMenuOpen(menuNextState)
    }
    if (menuItem.isTop) {
+      console.log(menuItem.link)
       return(
          <li className="fixed-top-icon">
-            {menuItem.link && menuItem.link.map((link_item, index) => {
-               <a href={link_item.link} target={link_item.target} className="pr-md-1 text-secondary">
-                  <i className={link_item.type}></i>
-               </a>
-            })}
+            {menuItem.link.map((link_item, index) =>
+            <a href={link_item.link} target={link_item.target} className="pr-md-1 text-secondary"><i className={link_item.type}></i></a>)}
          </li>
       )
    } else {
