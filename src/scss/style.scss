@@ -120,7 +120,7 @@ body{
   .fixed-top-icon{
     font-size: 22px;
     @include md-width{
-      position: fixed;
+      position: absolute;
       top: 5px;
       left: 30px;
     }
