@@ -51,11 +51,11 @@
       "link": ""
     },
     {
-      "isTop": "true", //show link top (pc)
+      "isTop": "true",
       "link": [
         {
-          "type": "fab fa-facebook-square", //use FontAwesome class
-          "link": "", //Enter your link url
+          "type": "fab fa-facebook-square",
+          "link": "",
           "target": "_blank"
         },
         {
