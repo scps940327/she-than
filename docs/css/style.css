@@ -3443,6 +3443,12 @@ body {
     .page-menu-sm li:not(:nth-last-child(1)) {
       margin-right: 7px; }
 
+@media all and (min-width: 768px) {
+  .fixed-top-icon {
+    position: fixed;
+    top: 10px;
+    left: 5%; } }
+
 .iframe-rwd {
   position: relative;
   padding-bottom: 75%;

@@ -49,6 +49,31 @@
     {
       "title": "藏經閣",
       "link": ""
+    },
+    {
+      "isTop": "true", //show link top (pc)
+      "link": [
+        {
+          "type": "fab fa-facebook-square", //use FontAwesome class
+          "link": "", //Enter your link url
+          "target": "_blank"
+        },
+        {
+          "type": "fab fa-youtube-square",
+          "link": "",
+          "target": "_blank"
+        },
+        {
+          "type": "fas fa-envelope-square",
+          "link": "",
+          "target": "_blank"
+        },
+        {
+          "type": "fab fa-line",
+          "link": "",
+          "target": "_blank"
+        }
+      ]
     }
   ]
 }

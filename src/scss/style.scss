@@ -258,6 +258,14 @@ body{
   }
 }
 
+.fixed-top-icon{
+  @include md-width{
+    position: fixed;
+    top: 10px;
+    left: 5%;
+  }
+}
+
 .iframe-rwd {
     position: relative;
     padding-bottom: 75%; // This is the aspect ratio

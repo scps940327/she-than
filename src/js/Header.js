@@ -105,15 +105,27 @@ function MenuItem({menuItem, isMobile}){
       let menuNextState = !subMenuOpen;
       setSubMenuOpen(menuNextState)
    }
-   return(
-      <li className="col-12 col-md px-md-2 text-center">
-         <div>
-            <a className="d-inline-block py-3 py-md-1" href={menuItem.link}>{menuItem.title}</a>
-            {menuItem.sub && isMobile ? <span className="pl-2" onClick={subMenuHandle}><i class="fas fa-caret-down"></i></span> : null}
-         </div>
-         {menuItem.sub ? <HeaderMenu data = {menuItem.sub} isMobile={isMobile} classList={'row no-gutters'} open={subMenuOpen} /> : null}
-      </li>
-   )
+   if (menuItem.isTop) {
+      return(
+         <li className="fixed-top-icon">
+            {menuItem.link && menuItem.link.map((link_item, index) => {
+               <a href={link_item.link} target={link_item.target} className="pr-md-1 text-secondary">
+                  <i className={link_item.type}></i>
+               </a>
+            })}
+         </li>
+      )
+   } else {
+      return(
+         <li className="col-12 col-md px-md-2 text-center">
+            <div>
+               <a className="d-inline-block py-3 py-md-1" href={menuItem.link}>{menuItem.title}</a>
+               {(menuItem.sub && isMobile) ? <span className="pl-2" onClick={subMenuHandle}><i class="fas fa-caret-down"></i></span> : null}
+            </div>
+            {menuItem.sub ? <HeaderMenu data = {menuItem.sub} isMobile={isMobile} classList={'row no-gutters'} open={subMenuOpen} /> : null}
+         </li>
+      )
+   }
 }
 
 
