@@ -49,7 +49,7 @@ function Header(){
         setHeaderMenu(superHeroes.menu)
       }
 
-      setHeaderMenu(testData);
+      // setHeaderMenu(testData);
       window.addEventListener("resize", handleResize);
    }, []);
 
