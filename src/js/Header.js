@@ -108,7 +108,7 @@ function MenuItem({menuItem, isMobile}){
    if (menuItem.isTop) {
       return(
          <li className="fixed-top-icon">
-            {menuItem.link && menuItem.link.map((link_item, index) => {
+            {menuItem.link.map((link_item, index) => {
                <a href={link_item.link} target={link_item.target} className="pr-md-1 text-secondary">
                   <i className={link_item.type}></i>
                </a>
