@@ -1,6 +1,10 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+const PurifyCSSPlugin = require('purifycss-webpack')
+const path = require('path')
+const glob = require('glob-all')
+
 module.exports = {
   entry: {
     index:"./src/index.js",
@@ -9,8 +13,8 @@ module.exports = {
     // classThird:"./src/classFirst.js"
   },
   output: {
-      path: __dirname + '/docs',
-      filename: "js/[name].js"
+    path: __dirname + '/docs',
+    filename: "js/[name].js"
   },
   module: {
     rules: [
@@ -86,6 +90,16 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: "./css/style.css"
+    }),
+    new PurifyCSSPlugin({
+      paths: glob.sync([
+        path.join(__dirname, 'src/*.html'),
+        path.join(__dirname, 'src/js/*.js')
+      ]),
+      minimize: true,
+      purifyOptions: {
+        whitelist: []
+      }
     })
   ]
 };
